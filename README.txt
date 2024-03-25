@@ -19,18 +19,3 @@ Running the migrate command to create the initial schema
   migrate -path db/migration --database "postgresql://root:secret@localhost:5431/simple_bank?sslmode=disable" -verbose up
 
 Install sqlc 'brew install sqlc"
-
-ACID
-Atomicity
-  Either all operations complete successfully or none do.
-Consistency
-  The db state must be valid after the transaction. All constraints must be satisfied
-Isolation
-   Concurrent transactions cannot affect each other
-
-Durability
-   Data written by a sucessful transaction must be permanent  
-
-Completed all the tests of CRUD and ACID
-
-Set up github actions with creating .github/workflows/ci.yaml file
