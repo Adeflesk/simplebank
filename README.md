@@ -34,3 +34,15 @@ Durability
 Completed all the tests of CRUD and ACID
 
 Set up github actions with creating .github/workflows/ci.yaml file
+
+Setup api using golang and gin  
+// https://github.com/gin-gonic/gin
+
+
+Used viper for reading app.env and loading a config file
+// https://github.com/spf13/viper
+
+Mocking database with mockgen 
+https://github.com/uber-go/mock
+
+To generate the mockdb use command make mock
