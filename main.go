@@ -4,8 +4,9 @@ import (
 	"database/sql"
 	"log"
 
-	db "github.com/Adeflesk/simplebank/db/sqlc/db/sqlc"
-	"github.com/techschool/simplebank/api"
+	"github.com/Adeflesk/simplebank/api"
+	db "github.com/Adeflesk/simplebank/db/sqlc"
+	_ "github.com/lib/pq"
 )
 
 const (

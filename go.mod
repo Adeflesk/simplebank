@@ -1,4 +1,4 @@
-module github.com/Adeflesk/simplebank/db/sqlc
+module github.com/Adeflesk/simplebank
 
 go 1.22.1
 

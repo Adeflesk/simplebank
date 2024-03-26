@@ -3,13 +3,13 @@ package api
 import (
 	"net/http"
 
-	db "example.com/db/db/sqlc"
+	db "github.com/Adeflesk/simplebank/db/sqlc"
 	"github.com/gin-gonic/gin"
 )
 
 type createAccountRequest struct {
 	Owner    string `json:"owner" binding:"required"`
-	Currency string `json:"currency" binding:"required, oneof=USD EUR GBP JPY CNY"`
+	Currency string `json:"currency" binding:"required"`
 }
 
 func (server *Server) createAccount(ctx *gin.Context) {
