@@ -19,3 +19,9 @@ Running the migrate command to create the initial schema
   migrate -path db/migration --database "postgresql://root:secret@localhost:5431/simple_bank?sslmode=disable" -verbose up
 
 Install sqlc 'brew install sqlc"
+
+To add new tables to the schema 
+run command migrate create -ext sql -dir db/migration -seq add_users
+
+Update tests for new tables
+Update the mockDb with make mock
