@@ -11,7 +11,7 @@ import (
 
 const createUser = `-- name: CreateUser :one
 INSERT INTO users (
-  username,
+  username, 
   hashed_password,
   full_name,
   email
