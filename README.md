@@ -46,3 +46,6 @@ Mocking database with mockgen
 https://github.com/uber-go/mock
 
 To generate the mockdb use command make mock
+
+
+To create branch to move on with git checkout -b ft/docker
