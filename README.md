@@ -46,3 +46,15 @@ Mocking database with mockgen
 https://github.com/uber-go/mock
 
 To generate the mockdb use command make mock
+
+
+To create branch to move on with git checkout -b ft/docker
+
+Create the Docker file, making sure that you create a small image by building in stages
+
+to remove built images  use Docker rmi "image id"
+to stop built running containers use Docker stop "container id"
+to remove built containers use Docker rm "container id"
+
+to start running containers use
+docker run --name simplebank -p 8080:8080 -e GIN_MODE=release -e DB_SOURCE="postgresql://root:secret@172.17.0.2/simple_bank?sslmode=disable" simplebank:latest
